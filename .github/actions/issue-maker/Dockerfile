@@ -2,7 +2,7 @@ FROM node:alpine
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm install -g npm@7.0.6
 
 COPY . .
 
